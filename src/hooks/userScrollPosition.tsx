@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import { FC } from "react";
 
 export const useScrollPosition = () => {
   const [scrollPosition, setScrollPosition] = useState(0);

@@ -1,4 +1,3 @@
-import { FC } from "react";
 import { Link } from "react-router-dom";
 
 import { useScrollPosition } from "../../hooks/userScrollPosition";
@@ -8,7 +7,7 @@ import Discord from "../../assets/imgs/discord.png";
 import Instagram from "../../assets/imgs/instagram.png";
 import Twitter from "../../assets/imgs/twitter.png";
 
-const MainHeader: FC = () => {
+const MainHeader = () => {
   const scrollPosition = useScrollPosition();
 
   return (
@@ -46,6 +45,7 @@ const MainHeader: FC = () => {
               href="https://www.material-tailwind.com/"
               className="w-[22px] transition hover:scale-110"
               target="_blank"
+              rel="noreferrer noopener"
             >
               <img src={Instagram} alt="" />
             </a>
@@ -53,6 +53,7 @@ const MainHeader: FC = () => {
               href="https://www.material-tailwind.com/"
               className="w-[22px] transition hover:scale-110"
               target="_blank"
+              rel="noreferrer noopener"
             >
               <img src={Twitter} alt="" />
             </a>
@@ -60,6 +61,7 @@ const MainHeader: FC = () => {
               href="https://www.material-tailwind.com/"
               className="w-[22px] transition hover:scale-110"
               target="_blank"
+              rel="noreferrer noopener"
             >
               <img src={Discord} alt="" />
             </a>
